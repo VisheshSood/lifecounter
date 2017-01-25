@@ -47,7 +47,7 @@
                 android:text="-"
                 android:minHeight="0dp"
                 android:id="@+id/p1m1"
-                android:layout_alignParentTop="@+id/count2"
+                android:layout_alignParentTop="@+id/life2"
                 android:layout_toRightOf="@+id/p1m5"
                 android:layout_toEndOf="@+id/p1m5" />
             
@@ -55,7 +55,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Life: 20"
-                android:id="@+id/count1"
+                android:id="@+id/life1"
                 android:layout_alignParentTop="true"
                 android:layout_toRightOf="@+id/textView"
                 android:layout_toEndOf="@+id/textView" />
@@ -67,7 +67,7 @@
                 android:text="+"
                 android:minHeight="0dp"
                 android:id="@+id/p1a1"
-                android:layout_above="@+id/count2"
+                android:layout_above="@+id/life2"
                 android:layout_toRightOf="@+id/p1m1"
                 android:layout_toEndOf="@+id/p1m1" />
 
@@ -78,7 +78,7 @@
                 android:text="+5"
                 android:minHeight="0dp"
                 android:id="@+id/p1a5"
-                android:layout_above="@+id/count2"
+                android:layout_above="@+id/life2"
                 android:layout_toRightOf="@+id/p1a1"
                 android:layout_toEndOf="@+id/p1a1" />
         </TableRow>
@@ -103,9 +103,9 @@
                 android:text="-5"
                 android:minHeight="0dp"
                 android:id="@+id/p2m5"
-                android:layout_alignBottom="@+id/count2"
-                android:layout_toRightOf="@+id/count2"
-                android:layout_toEndOf="@+id/count2" />
+                android:layout_alignBottom="@+id/life2"
+                android:layout_toRightOf="@+id/life2"
+                android:layout_toEndOf="@+id/life2" />
 
             <Button
                 style="?android:attr/buttonStyleSmall"
@@ -114,7 +114,7 @@
                 android:text="-"
                 android:minHeight="0dp"
                 android:id="@+id/p2m1"
-                android:layout_above="@+id/count3"
+                android:layout_above="@+id/life3"
                 android:layout_toRightOf="@+id/p2m5"
                 android:layout_toEndOf="@+id/p2m5" />
 
@@ -122,8 +122,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Life: 20"
-                android:id="@+id/count2"
-                android:layout_below="@+id/count1"
+                android:id="@+id/life2"
+                android:layout_below="@+id/life1"
                 android:layout_toRightOf="@+id/textView2"
                 android:layout_toEndOf="@+id/textView2" />
 
@@ -134,7 +134,7 @@
                 android:text="+"
                 android:minHeight="0dp"
                 android:id="@+id/p2a1"
-                android:layout_above="@+id/count3"
+                android:layout_above="@+id/life3"
                 android:layout_toRightOf="@+id/p2m1"
                 android:layout_toEndOf="@+id/p2m1" />
 
@@ -145,7 +145,7 @@
                 android:text="+5"
                 android:minHeight="0dp"
                 android:id="@+id/p2a5"
-                android:layout_above="@+id/count3"
+                android:layout_above="@+id/life3"
                 android:layout_toRightOf="@+id/p2a1"
                 android:layout_toEndOf="@+id/p2a1" />
         </TableRow>
@@ -168,9 +168,9 @@
                 android:text="-5"
                 android:minHeight="0dp"
                 android:id="@+id/p3m5"
-                android:layout_alignBottom="@+id/count3"
-                android:layout_toRightOf="@+id/count3"
-                android:layout_toEndOf="@+id/count3" />
+                android:layout_alignBottom="@+id/life3"
+                android:layout_toRightOf="@+id/life3"
+                android:layout_toEndOf="@+id/life3" />
 
             <Button
                 style="?android:attr/buttonStyleSmall"
@@ -179,7 +179,7 @@
                 android:text="-"
                 android:minHeight="0dp"
                 android:id="@+id/p3m1"
-                android:layout_above="@+id/count4"
+                android:layout_above="@+id/life4"
                 android:layout_toRightOf="@+id/p3m5"
                 android:layout_toEndOf="@+id/p3m5" />
 
@@ -187,8 +187,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Life: 20"
-                android:id="@+id/count3"
-                android:layout_below="@+id/count2"
+                android:id="@+id/life3"
+                android:layout_below="@+id/life2"
                 android:layout_toRightOf="@+id/textView3"
                 android:layout_toEndOf="@+id/textView3" />
 
@@ -200,7 +200,7 @@
                 android:text="+"
                 android:minHeight="0dp"
                 android:id="@+id/p3a1"
-                android:layout_above="@+id/count4"
+                android:layout_above="@+id/life4"
                 android:layout_toRightOf="@+id/p3m1"
                 android:layout_toEndOf="@+id/p3m1" />
 
@@ -211,7 +211,7 @@
                 android:text="+5"
                 android:minHeight="0dp"
                 android:id="@+id/p3a5"
-                android:layout_above="@+id/count4"
+                android:layout_above="@+id/life4"
                 android:layout_toRightOf="@+id/p3a1"
                 android:layout_toEndOf="@+id/p3a1" />
         </TableRow>
@@ -235,9 +235,9 @@
                 android:text="-5"
                 android:minHeight="0dp"
                 android:id="@+id/p4m5"
-                android:layout_alignBottom="@+id/count4"
-                android:layout_toRightOf="@+id/count4"
-                android:layout_toEndOf="@+id/count4" />
+                android:layout_alignBottom="@+id/life4"
+                android:layout_toRightOf="@+id/life4"
+                android:layout_toEndOf="@+id/life4" />
 
             <Button
                 style="?android:attr/buttonStyleSmall"
@@ -254,8 +254,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Life: 20"
-                android:id="@+id/count4"
-                android:layout_below="@+id/count3"
+                android:id="@+id/life4"
+                android:layout_below="@+id/life3"
                 android:layout_toRightOf="@+id/textView4"
                 android:layout_toEndOf="@+id/textView4" />
 
