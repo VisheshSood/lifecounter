@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.washington.vsood.lifecounter.MainActivity"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/table">
+
+       
+        <TableRow android:id="@+id/p1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player 1:"
+                android:textSize="18dp"
+                android:id="@+id/textView"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-5"
+                android:minHeight="0dp"
+                android:id="@+id/p1m5"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:minHeight="0dp"
+                android:id="@+id/p1m1"
+                android:layout_alignParentTop="@+id/count2"
+                android:layout_toRightOf="@+id/p1m5"
+                android:layout_toEndOf="@+id/p1m5" />
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Life: 20"
+                android:id="@+id/count1"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView"
+                android:layout_toEndOf="@+id/textView" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:minHeight="0dp"
+                android:id="@+id/p1a1"
+                android:layout_above="@+id/count2"
+                android:layout_toRightOf="@+id/p1m1"
+                android:layout_toEndOf="@+id/p1m1" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+5"
+                android:minHeight="0dp"
+                android:id="@+id/p1a5"
+                android:layout_above="@+id/count2"
+                android:layout_toRightOf="@+id/p1a1"
+                android:layout_toEndOf="@+id/p1a1" />
+        </TableRow>
+
+
+
+        <TableRow android:id="@+id/p2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player 2:"
+                android:textSize="18dp"
+                android:id="@+id/textView2"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-5"
+                android:minHeight="0dp"
+                android:id="@+id/p2m5"
+                android:layout_alignBottom="@+id/count2"
+                android:layout_toRightOf="@+id/count2"
+                android:layout_toEndOf="@+id/count2" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:minHeight="0dp"
+                android:id="@+id/p2m1"
+                android:layout_above="@+id/count3"
+                android:layout_toRightOf="@+id/p2m5"
+                android:layout_toEndOf="@+id/p2m5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Life: 20"
+                android:id="@+id/count2"
+                android:layout_below="@+id/count1"
+                android:layout_toRightOf="@+id/textView2"
+                android:layout_toEndOf="@+id/textView2" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:minHeight="0dp"
+                android:id="@+id/p2a1"
+                android:layout_above="@+id/count3"
+                android:layout_toRightOf="@+id/p2m1"
+                android:layout_toEndOf="@+id/p2m1" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+5"
+                android:minHeight="0dp"
+                android:id="@+id/p2a5"
+                android:layout_above="@+id/count3"
+                android:layout_toRightOf="@+id/p2a1"
+                android:layout_toEndOf="@+id/p2a1" />
+        </TableRow>
+
+        <TableRow android:id="@+id/p3">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player 3:"
+                android:textSize="18dp"
+                android:id="@+id/textView3"
+                android:layout_below="@+id/textView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-5"
+                android:minHeight="0dp"
+                android:id="@+id/p3m5"
+                android:layout_alignBottom="@+id/count3"
+                android:layout_toRightOf="@+id/count3"
+                android:layout_toEndOf="@+id/count3" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:minHeight="0dp"
+                android:id="@+id/p3m1"
+                android:layout_above="@+id/count4"
+                android:layout_toRightOf="@+id/p3m5"
+                android:layout_toEndOf="@+id/p3m5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Life: 20"
+                android:id="@+id/count3"
+                android:layout_below="@+id/count2"
+                android:layout_toRightOf="@+id/textView3"
+                android:layout_toEndOf="@+id/textView3" />
+
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:minHeight="0dp"
+                android:id="@+id/p3a1"
+                android:layout_above="@+id/count4"
+                android:layout_toRightOf="@+id/p3m1"
+                android:layout_toEndOf="@+id/p3m1" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+5"
+                android:minHeight="0dp"
+                android:id="@+id/p3a5"
+                android:layout_above="@+id/count4"
+                android:layout_toRightOf="@+id/p3a1"
+                android:layout_toEndOf="@+id/p3a1" />
+        </TableRow>
+
+        <TableRow android:id="@+id/p4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player 4:"
+                android:textSize="18dp"
+                android:id="@+id/textView4"
+                android:layout_below="@+id/textView3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-5"
+                android:minHeight="0dp"
+                android:id="@+id/p4m5"
+                android:layout_alignBottom="@+id/count4"
+                android:layout_toRightOf="@+id/count4"
+                android:layout_toEndOf="@+id/count4" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:minHeight="0dp"
+                android:id="@+id/p4m1"
+                android:layout_above="@+id/count5"
+                android:layout_toRightOf="@+id/p4m5"
+                android:layout_toEndOf="@+id/p4m5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Life: 20"
+                android:id="@+id/count4"
+                android:layout_below="@+id/count3"
+                android:layout_toRightOf="@+id/textView4"
+                android:layout_toEndOf="@+id/textView4" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:minHeight="0dp"
+                android:id="@+id/p4a1"
+                android:layout_above="@+id/count5"
+                android:layout_toRightOf="@+id/p4m1"
+                android:layout_toEndOf="@+id/p4m1" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+5"
+                android:minHeight="0dp"
+                android:id="@+id/p4a5"
+                android:layout_above="@+id/count5"
+                android:layout_toRightOf="@+id/p4a1"
+                android:layout_toEndOf="@+id/p4a1" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player X Loses!"
+        android:visibility="invisible"
+        android:textSize="40dp"
+        android:textColor="#FF0000"
+        android:id="@+id/loserTag"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
