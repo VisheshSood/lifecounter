@@ -22,12 +22,16 @@ public class MainActivity extends AppCompatActivity {
         //When there is a change in rotation, the lives need to be updated to match
         //previous stored lives
         for (int i = 1; i <= playerLives.length; i++) {
-            Resources r = getResources();
-            int lifeID = r.getIdentifier("life" + i,"id", getPackageName());
-            ((TextView)findViewById(lifeID)).setText("Life: " + Integer.toString(playerLives[i-1]));
+           updateLives(i);
         }
 
         //Initialize the buttons and implement their on click listeners...
+    }
+
+    //Need a helper method to make updating the player lives less redundant.
+    private void updateLives(int playerID) {
+        Resources r = getResources();
+        ((TextView)findViewById(r.getIdentifier("life" + playerID,"id", getPackageName()))).setText("Life: " + Integer.toString(playerLives[playerID-1]));
     }
 
     //private class to make the button presses less redundant and maybe get extra credit for it...
