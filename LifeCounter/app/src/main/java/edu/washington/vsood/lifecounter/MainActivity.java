@@ -1,14 +1,14 @@
 package edu.washington.vsood.lifecounter;
 
-import android.support.annotation.IntegerRes;
-import android.support.v7.app.AppCompatActivity;
+import android.content.res.Resources;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
 import java.util.ArrayList;
 import java.util.List;
-import android.content.res.Resources;
-import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -36,10 +36,11 @@ public class MainActivity extends AppCompatActivity {
             Button three  = (Button)findViewById(getResources().getIdentifier("p" + i + "a1", "id", getPackageName()));
             Button four = (Button)findViewById(getResources().getIdentifier("p" + i + "a5", "id", getPackageName()));
 
-            one.setOnClickListener(new ButtonClickListener());
-            two.setOnClickListener(new ButtonClickListener());
-            three.setOnClickListener(new ButtonClickListener());
-            four.setOnClickListener(new ButtonClickListener());
+            ButtonClickListener listener = new ButtonClickListener();
+            one.setOnClickListener(listener);
+            two.setOnClickListener(listener);
+            three.setOnClickListener(listener);
+            four.setOnClickListener(listener);
 
             buttonArray[i-1][0] = one;
             buttonArray[i-1][1] = two;
